@@ -1,11 +1,11 @@
-/* Body Styles */
+/* variables declaration */
 :root {
   --dark-purple: #3f1995;
   --light-purple: #8a64e1;
   --white: #fff;
 }
 
-
+/* Body Styles */
 body {
   font-family: Verdana;
   background-color: var(--white);
@@ -13,7 +13,6 @@ body {
 }
 
 /* Header Styles  */
-
 header {
   display: flex;
   visibility: visible;
@@ -34,22 +33,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-ol {
-  background-color: var(--light-purple);
-  padding: 1rem 3rem 1rem 4rem;
-}
-
-li {
-  color: black;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-li::marker {
-  color: var(--white);
 }
 
 /* Button Styles */
@@ -121,6 +104,22 @@ li::marker {
 }
 
 /* Leaderboard Card Styles */
+
+ol {
+  background-color: var(--light-purple);
+  padding: 1rem 3rem 1rem 4rem;
+}
+
+li {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: var(--white);
+}
 
 #back-button {
   margin-right: 8px;
