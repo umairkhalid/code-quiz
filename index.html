@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header hidden id=header-card>
+        <a id=leaderboard-link>View Highscores</a> 
+        
+        <time>Time: <span id="time"></span></time>
+    </header>
+
+    <main>
+        <div id=start-card class="card">
+            <h2 id=title>Coding Quiz Challenge</h2>
+            <p>Try to answer to following code-related questions within the time limit. <br><br> Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id=start-button class="button">Start Quiz</button>
+        </div>
+
+        <div hidden id=question-card class="card">
+
+            <h2 id=question-text></h2>
+
+            <div id=quiz-options>
+                <button id=option0 class="button option-button"></button>
+                <button id=option1 class="button option-button"></button>
+                <button id=option2 class="button option-button"></button>
+                <button id=option3 class="button option-button"></button>
+            </div>
+
+            <div id=result-div>
+                <hr>
+                <p id=result-text></p>
+            </div>
+
+        </div>
+
+        <div hidden id=score-card class="card">
+            <h2>All done!</h2>
+            <p>Your final score is <span id=score></span>.</p>
+            <form class="inline-form" id="submission-form">
+                  <label for="initials">Enter initials: </label>
+                  <input type="text" id="initials">
+                  <button id="submit-button" class="button">Submit</button>
+                  <div id=alert-div>
+                    <p id=alert-box></p>
+                </div>
+            </form>
+        </div>
+
+        <div hidden id=leaderboard-card class="card">
+            <h2>Highscores</h2>
+            <ol id="highscore-list">
+            </ol>
+            <div class="inline-buttons">
+                <button id="back-button" class="button">Go Back</button>
+                <button id="clear-button" class="button">Clear Highscores</button>
+            </div>
+        </div>
+
+    </main>
+
+    <audio id="correct" src="./assets/audio/beep-08b.mp3"></audio>
+    <audio id="incorrect" src="./assets/audio/beep-10.mp3"></audio>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

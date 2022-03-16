@@ -1,0 +1,151 @@
+/* Body Styles */
+:root {
+  --dark-purple: #3f1995;
+  --light-purple: #8a64e1;
+  --white: #fff;
+}
+
+
+body {
+  font-family: Verdana;
+  background-color: var(--white);
+  margin: 0px;
+}
+
+/* Header Styles  */
+
+header {
+  display: flex;
+  visibility: visible;
+  justify-content: space-between;
+  color: var(--dark-purple);
+  padding: 3vh;
+}
+
+/* specify min-width for time element to give enough space for the span inside it to contain 3 digits without visibly moving the "time" text */
+
+time {
+  min-width: 85px;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ol {
+  background-color: var(--light-purple);
+  padding: 1rem 3rem 1rem 4rem;
+}
+
+li {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: var(--white);
+}
+
+/* Button Styles */
+
+.button {
+  color: #ffffff;
+  background-color: var(--dark-purple);
+  height: 2rem;
+  padding: 1vh;
+  border-radius: 4px;
+}
+
+.button:active {
+  box-shadow: 0px 0px 20px var(--light-purple);
+}
+
+.inline-buttons {
+  display: inline-flex;
+}
+
+#quiz-options {
+  display: grid;
+  justify-content: left;
+}
+
+/* Card Styles */
+
+.card {
+  max-width: 80%;
+  padding: 3vw;
+  text-align: center;
+}
+
+/* Start Card Styles */
+
+#start-screen {
+  display: inline;
+  text-align: center;
+}
+
+/* Question Card Styles */
+
+.option-button {
+  text-align: left;
+  margin: 5px;
+}
+
+#result-div {
+  display: none;
+}
+
+#result-text {
+  text-align: left;
+  font-style: italic;
+}
+
+/* Score Card Styles */
+
+.inline-form {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#initials {
+  width: 25%;
+  margin: 8px;
+  padding: 1vh;
+}
+
+/* Leaderboard Card Styles */
+
+#back-button {
+  margin-right: 8px;
+}
+
+.highscore-list {
+  padding-inline-start: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 850px) {
+  .card {
+    max-width: 600px;
+  }
+}
+
+/* Media query that specifies devices that can utilize hover */
+@media (hover) {
+  /* Stylings pertaining to hover pseudo-class*/
+  a:hover {
+    color: var(--light-purple);
+  }
+
+  button:hover {
+    background-color: var(--light-purple);
+  }
+}
