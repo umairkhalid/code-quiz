@@ -28,7 +28,7 @@ THEN I can save my initials and my score
 
 ## Link to Deployed Application
 
-
+https://umairkhalid.github.io/code-quiz/
 
 ## Demo of Deployed Application
 
